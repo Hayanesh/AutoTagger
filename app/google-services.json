@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "415608121402",
+    "firebase_url": "https://autotagger-525fc.firebaseio.com",
+    "project_id": "autotagger-525fc",
+    "storage_bucket": "autotagger-525fc.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:415608121402:android:08727e0b03a00a0d",
+        "android_client_info": {
+          "package_name": "com.hayanesh.autotagger"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "415608121402-elbi68e0egu29art24adqqdol4b55q4g.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCiQhhgT58nUiVPeJqYRocltu8brM-XifU"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

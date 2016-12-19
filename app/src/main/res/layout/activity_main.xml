@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.hayanesh.autotagger.MainActivity">
+
+    <com.rey.material.widget.ProgressView
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            app:pv_autostart="true"
+            app:pv_circular="true"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            app:pv_progressStyle="@style/Material.Drawable.CircularProgress"
+            app:pv_progressMode="indeterminate"/>
+       <android.support.v7.widget.CardView
+           android:id="@+id/pic_control"
+           android:layout_width="match_parent"
+           android:layout_height="match_parent"
+           android:layout_margin="3dp"
+           android:layout_below="@+id/imageView"
+           android:layout_alignBottom="@id/imageView"
+           android:layout_alignParentBottom="true"
+           android:layout_alignParentStart="false">
+        <FrameLayout
+            android:id="@+id/control"
+            android:layout_width="match_parent"
+            android:layout_height="160dp">
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/ic_gallery"
+            android:id="@+id/button"
+            android:layout_gravity="left"
+            android:visibility="gone"/>
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:fadingEdgeLength="2dp"
+                android:id="@+id/button2"
+                android:layout_gravity="center_horizontal"
+                android:background="@mipmap/ic_analyse"
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:layout_margin="10dp"
+                app:rd_enable="true"/>
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                android:fadingEdgeLength="2dp"
+                android:background="@mipmap/ic_rotate_left"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:id="@+id/left_button"
+                android:layout_margin="20dp"
+                app:rd_enable="true"/>
+
+            <com.rey.material.widget.Button
+                style="@style/Material.Drawable.Ripple.Wave"
+                    android:layout_gravity="right"
+                android:fadingEdgeLength="2dp"
+                    android:layout_margin="20dp"
+                    android:background="@mipmap/ic_rotate_right"
+                    android:layout_width="30dp"
+                app:rd_enable="true"
+                    android:layout_height="30dp"
+                    android:id="@+id/right_button" />
+
+        </FrameLayout>
+       </android.support.v7.widget.CardView>
+
+    <ImageView
+        android:layout_width="fill_parent"
+        android:layout_marginLeft="-4dp"
+        android:id="@+id/imageView"
+        android:layout_gravity="center_horizontal"
+        android:transitionName="@string/blue"
+        android:layout_alignParentTop="true"
+        android:layout_alignStart="@+id/pic_control"
+        android:layout_height="480dp" />
+</RelativeLayout>
